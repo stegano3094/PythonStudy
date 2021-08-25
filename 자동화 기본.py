@@ -212,6 +212,8 @@ try:
     # 해당 태그를 찾을 때까지 10초간 기다림
     button1 = WebDriverWait(driver, 3).until(EC.presence_of_element_located((By.CSS_SELECTOR, ".month3")))
     button1.click()  # 해당 태그를 찾았을 경우 클릭이 할 수도 있음
+    #button1.clear()  # 입력란의 기존 값을 지움
+    #button1.send_keys('문자열')  # 입력란에 입력함
 except:
     print("WebDriverWait 예외발생, 해당 태그가 있는지 확인해주세요.")
 
